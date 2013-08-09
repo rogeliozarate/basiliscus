@@ -1,6 +1,6 @@
 require "selenium-webdriver"
  
-site = "http://earlyadopters.mx/"
+site = "https://github.com/rogeliozarate"
  
 driver = Selenium::WebDriver.for :chrome
 driver.navigate.to site
@@ -9,3 +9,4 @@ sleep 5                                          # required to wait until script
 screenshot_time = Time.now.strftime("%Y-%m-%dT%H-%M-%S")
 driver.save_screenshot("#{screenshot_time}.png")
 driver.quit
+`open "#{screenshot_time}.png"`
