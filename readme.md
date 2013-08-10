@@ -18,7 +18,7 @@ brew install chromedriver
 * selenium
  
 ###It works!
-![Alt text](https://github.com/rogeliozarate/basiliscus/blob/master/2013-08-09T15-45-20.png "Example")
+![Alt text](https://raw.github.com/rogeliozarate/basiliscus/master/2013-08-09T20-22-50.png "Example")
 ### ToDo
 * A lot of research to do
 * Document research
