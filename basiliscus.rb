@@ -5,11 +5,11 @@ require "selenium-webdriver"
 
 
 get "/" do
-  "home sweet home"
+  "usage: localhost:4567/wikipedia.com"
 end
 
-get '/take' do
-  site = "https://github.com/rogeliozarate"                
+get '/:address' do
+  site = "http://" + params[:address].to_s                
   driver = Selenium::WebDriver.for :chrome
   driver.navigate.to site
   driver.manage.window.maximize
