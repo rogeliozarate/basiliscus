@@ -5,18 +5,18 @@
 
 ## Notes
 
-Works in OS X
+### Works on my machine 
+#### Stack
+
+* OS X
+* Ruby 2.0.0-p0
+* selenium
 
 Before running install Chrome driver 
 
 ```bash
 brew install chromedriver
 ```
-
-### Stack
-* ruby 2.0.0-p0
-* selenium
- 
 ###It works!
 ![Alt text](https://raw.github.com/rogeliozarate/basiliscus/master/2013-08-09T20-22-50.png "Example")
 ### ToDo
