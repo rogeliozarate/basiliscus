@@ -19,7 +19,7 @@ brew install chromedriver
 ```
 Type target address in the web browser address bar, like:
 ```bash
-http://localhost:4567/github.com/rogeliozarate
+http://localhost:4567/github.com
 ````
 
 ###It works!
