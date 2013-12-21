@@ -5,11 +5,13 @@ require "selenium-webdriver"
 
 
 get "/" do
-  "usage: localhost:4567/wikipedia.com"
+  "usage: http://localhost:4567/snap/en.wikipedia.org/wiki/Asimov"
 end
 
-get '/:address' do
-  site = "http://" + params[:address].to_s                
+
+get "/snap/*" do
+  par = request.fullpath.split("snap/")[1]
+  site = "http://" + par.to_s               
   driver = Selenium::WebDriver.for :chrome
   driver.navigate.to site
   driver.manage.window.maximize
